@@ -1,5 +1,5 @@
 # VAULTY
-<h1>Open-Source Secure Wallet Manager with 2FA</h1>
+<h1>Open-Source Secure Wallet Manager with in build 2FA</h1>
 
 <h2>Overview</h2>
 <p>This project is an open-source <strong>wallet manager</strong> that securely stores passwords, email IDs, and notes in an <strong>encrypted format</strong>. It also includes a built-in <strong>Two-Factor Authentication (2FA) generator</strong>, similar to Google Authenticator, allowing users to store and generate 2FA codes.</p>
