@@ -1,2 +1,2 @@
 # VAULTY
-######Open-Source Secure Wallet Manager with 
+#Open-Source Secure Wallet Manager with 
