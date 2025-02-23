@@ -272,10 +272,14 @@ Vaultly/
 <hr>
 
 <h2><strong>Contact</strong></h2>
-<p>For queries or contributions, contact <strong>Thiruvikraman</strong> at <a href="mailto:thiruvikramansriram@gmail.com">thiruvikramansriram@gmail.com</a>
-   <strong>Thiyanesh</strong> at <a href="mailto:thiyaneshr11b328@gmail.com">thiyaneshr11b328@gmail.com</a>
-   <strong>KUMARA grur</strong> at <a href="mailto:kumaraguru4612@gmail.com">kumaraguru4612@gmail.com</a>.</p>
+<p>For queries or contributions, contact  
+   <strong>Thiruvikraman</strong> at <a href="mailto:thiruvikramansriram@gmail.com">thiruvikramansriram@gmail.com</a>,  
+   <strong>Thiyanesh</strong> at <a href="mailto:thiyaneshr11b328@gmail.com">thiyaneshr11b328@gmail.com</a>,  
+   <strong>Kumaraguru</strong> at <a href="mailto:kumaraguru4612@gmail.com">kumaraguru4612@gmail.com</a>,  
+   <strong>Palaniyappan</strong> at <a href="mailto:palaniyappan.sarabesh@gmail.com">palaniyappan.sarabesh@gmail.com</a>.  
+</p>  
 
 <h2><strong>Happy Coding! 🚀</strong></h2>
+
 
 
