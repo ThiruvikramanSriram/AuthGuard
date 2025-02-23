@@ -135,7 +135,9 @@ spring.datasource.password=db_password</code></pre>
 <hr>
 
 <h2><strong>Contact</strong></h2>
-<p>For queries or contributions, contact <strong>Thiruvikraman</strong> at <a href="mailto:thiruvikramansriram@gmail.com">thiru</a>.</p>
+<p>For queries or contributions, contact <strong>Thiruvikraman</strong> at <a href="mailto:thiruvikramansriram@gmail.com">thiruvikramansriram@gmail.com</a>
+   <strong>Thiyanesh</strong> at <a href="mailto:thiyaneshr11b328@gmail.com">thiyaneshr11b328@gmail.com</a>
+   <strong>KUMARA grur</strong> at <a href="mailto:kumaraguru4612@gmail.com">kumaraguru4612@gmail.com</a>.</p>
 
 <h2><strong>Happy Coding! 🚀</strong></h2>
 
