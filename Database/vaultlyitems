@@ -1,0 +1,8 @@
+DB:(vaultlyitems)
+CREATE TABLE `vaultlydemo`.`vaultlyitems` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `title` VARCHAR(100) NULL,
+  `encrypted_data` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
