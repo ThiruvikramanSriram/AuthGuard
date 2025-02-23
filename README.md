@@ -129,6 +129,96 @@ spring.datasource.password=db_password</code></pre>
 
 WORKS WE DONE AND NOT DONE
 
+# Vaultly - Password Management System
+
+## Overview
+
+Vaultly is a **[powerful](#)**, **[open-source](#)**, and **[free](#)** password management system that allows users to securely store, view, and manage their passwords. With a **[simple](#)** yet **[robust](#)** design, this application provides functionality for creating, updating, and organizing credentials. Additionally, Vaultly integrates **[Two-Factor Authentication (2FA)](#)** for enhanced security, making it a **[reliable](#)** solution for password management.
+
+## Features
+
+- **[Categories](#)**: Users can organize their passwords into different categories (e.g., Social Media, Bank Accounts, etc.) for easy access and management.
+- **[Password Management](#)**: Add, view, update, and delete passwords associated with each category, all while maintaining **[high-level security](#)**.
+- **[Master Password](#)**: A **[secure](#)** master password is required to unlock stored credentials, ensuring **[encryption](#)** and **[decryption](#)** of sensitive data.
+- **[Two-Factor Authentication (2FA)](#)**: Integration with **[2FA](#)** for added security (work in progress).
+
+## Current Status
+
+### Completed:
+
+- **[Home Page Design](#)**: The home page is **[simple](#)** and **[user-friendly](#)**, displaying categories and password details. Users can interact with password items in a **[clean](#)** interface.
+  
+- **[Master Password Authentication](#)**: The master password section is functional, providing **[secure](#)** access to password details.
+
+- **[Backend Setup](#)**:
+   - **[Database Connection](#)**: The backend is successfully connected to a **[powerful](#)**, **[free](#)** database, allowing for **[persistent storage](#)** of user credentials and passwords.
+   - **[Entity Setup](#)**: The necessary entities for users and credentials have been created.
+   - **[API Implementation](#)**: **[RESTful](#)** APIs for registration, login, and password management are implemented.
+   - **[Encryption](#)**: Passwords are encrypted using **[AES-256 encryption](#)** for **[secure](#)** storage in the database.
+   - **[Application Setup](#)**: Proper configurations are set in `pom.xml` and `application.properties`.
+
+### Pending/Work in Progress:
+
+- **[Hashing](#) & Some Logic**:
+   - Password **[hashing](#)** and some additional business logic are still pending for full security functionality.
+
+- **[Database Integration](#)**:
+   - Backend is ready, but some **[business logic](#)** for user session management (using **[JWT tokens](#)**) and handling user authentication is missing.
+
+- **[Two-Factor Authentication (2FA)](#)**:
+   - The **[2FA](#)** component’s design and functionality are pending.
+   - Integration with **[2FA](#)** is not yet implemented due to time constraints.
+
+- **[Frontend Integration](#)**:
+   - The **[simple](#)** and **[user-friendly](#)** frontend is not yet connected to the backend for login, registration, and password management features.
+   - The **[smooth](#)** communication between frontend and backend for **[encrypted](#)** password handling is still missing.
+
+- **[UI/UX Design](#)**:
+   - The **[design](#)** for the 2FA component and some minor UI elements are pending and will be finalized later.
+
+## Steps to Complete the Project:
+
+1. **[Complete Password Hashing](#)**:
+   - Implement **[secure hashing](#)** for storing passwords, using **[bcrypt](#)** or another **[reliable](#)** hashing algorithm.
+   
+2. **[Session Management](#)**:
+   - Implement **[session management](#)** with **[JWT tokens](#)** for **[secure](#)** user authentication.
+
+3. **[Frontend Integration](#)**:
+   - Integrate the **[simple](#)** frontend with the **[powerful](#)** backend for login, registration, and password management.
+   - Ensure **[smooth communication](#)** between the frontend and backend, especially for **[encrypted](#)** password handling.
+
+4. **[Complete 2FA Component](#)**:
+   - Finalize the design of the **[2FA](#)** component and integrate **[Two-Factor Authentication](#)** using a **[reliable](#)** service.
+
+5. **[Backend Logic](#)**:
+   - Complete the **[business logic](#)** for user authentication and other backend services.
+
+6. **[UI/UX Enhancements](#)**:
+   - Finalize the design for all components, especially the **[2FA page](#)**, and ensure the app is **[responsive](#)** for different screen sizes.
+
+## Setup Instructions
+
+1. Clone this repository.
+2. Install dependencies:
+   - For frontend: `npm install` (if Angular is used).
+   - For backend: Set up a **[simple](#)** server using **[Spring Boot](#)** or **[Node.js](#)** (as per your preference).
+3. Set up the **[powerful](#)** database and connect it to the backend for storing user and password data.
+4. Run the application and ensure it works as expected, including features like adding/viewing passwords and entering the master password.
+
+## Contributing
+
+Vaultly is an **[open-source](#)** project, and we welcome contributions. If you'd like to contribute, feel free to fork the repository and submit a pull request. We are especially looking for help with:
+
+- Integrating the database for **[user authentication](#)**.
+- Completing the **[2FA](#)** component.
+- Improving **[UI/UX design](#)**.
+
+## License
+
+This project is **[open-source](#)** and available under the [MIT License](LICENSE).
+
+
 # 🚀 Vaultly Backend - Initial Setup  
 
 ## 📝 Overview  
