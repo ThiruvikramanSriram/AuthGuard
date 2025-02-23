@@ -127,6 +127,53 @@ spring.datasource.password=db_password</code></pre>
 <tr><td>DELETE</td><td><code>/api/data/delete/:id</code></td><td>Deletes stored data</td></tr>
 </table>
 
+WORKS WE DONE AND NOT DONE
+
+# 🚀 Vaultly Backend - Initial Setup  
+
+## 📝 Overview  
+Vaultly is an open-source secure vault manager designed for storing passwords, emails, and notes in an **encrypted format** with **2FA support**.  
+
+This initial setup includes:  
+✅ **Database Integration (MySQL)**  
+✅ **User Authentication**  
+✅ **Password Hashing (bcrypt)**  
+✅ **AES-256 Encryption for Vault Items**  
+✅ **JWT-Based Authentication**  
+✅ **Basic User & VaultItem Models**  
+
+
+## 📂 File Structure (Implemented Till Now)  
+```plaintext
+Vaultly/
+│── src/
+│   ├── main/
+│   │   ├── java/com/vaultly/
+│   │   │   ├── config/  
+│   │   │   │   ├── SecurityConfig.java  # Spring Security Setup  
+│   │   │   ├── controller/  
+│   │   │   │   ├── AuthController.java  # Handles User Auth (JWT Login/Register)  
+│   │   │   ├── model/  
+│   │   │   │   ├── User.java  # User Entity  
+│   │   │   │   ├── VaultItem.java  # Vault Entity  
+│   │   │   ├── repository/  
+│   │   │   │   ├── UserRepository.java  # JPA Repository for Users  
+│   │   │   │   ├── VaultItemRepository.java  # JPA Repository for Vault Items  
+│   │   │   ├── service/  
+│   │   │   │   ├── JwtService.java  # JWT Token Generation & Validation  
+│   │   │   │   ├── EncryptionService.java  # AES-256 Encryption & Decryption  
+│   │   │   │   ├── AuthService.java  # User Auth Logic  
+│   │   │   ├── VaultlyApplication.java  # Main Spring Boot App  
+│   ├── resources/
+│   │   ├── application.properties  # DB & Security Config  
+│── pom.xml  # Project Dependencies  
+│── README.md  # This File
+
+
+
+
+
+
 <hr>
 
 <h2><strong>License</strong></h2>
