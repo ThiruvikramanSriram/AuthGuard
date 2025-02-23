@@ -1,0 +1,34 @@
+@RestController
+@RequestMapping("/auth")
+public class AuthController {
+    @Autowired private UserRepository userRepository;
+    @Autowired private PasswordService passwordService;
+    @Autowired private JwtService jwtService;
+    @Autowired private EncryptionService encryptionService;
+
+    @PostMapping("/register")
+    public ResponseEntity<String> register(@RequestBody RegisterRequest request) throws Exception {
+        if (userRepository.findByEmail(request.getEmail()).isPresent()) {
+            return ResponseEntity.badRequest().body("Email already exists!");
+        }
+
+        User user = new User();
+        user.setEmail(request.getEmail());
+        user.setPassword(passwordService.hashPassword(request.getPassword()));
+        user.setEncryptedData(encryptionService.encrypt("User Secure Data"));
+        userRepository.save(user);
+
+        return ResponseEntity.ok("User registered successfully!");
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginRequest request) {
+        Optional<User> userOpt = userRepository.findByEmail(request.getEmail());
+        if (userOpt.isEmpty() || !passwordService.verifyPassword(request.getPassword(), userOpt.get().getPassword())) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials!");
+        }
+
+        String token = jwtService.generateToken(request.getEmail());
+        return ResponseEntity.ok(token);
+    }
+}
