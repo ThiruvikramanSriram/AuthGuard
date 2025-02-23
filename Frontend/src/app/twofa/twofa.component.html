@@ -1,0 +1,27 @@
+
+<div class="container">
+    <h2>2FA Storage</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Secret</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of twoFAList">
+          <td>{{ item.service }}</td>
+          <td>{{ showDecrypted ? item.decrypted : item.secret }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Master Password Prompt -->
+    <div *ngIf="!showDecrypted">
+      <input type="password" [(ngModel)]="masterPassword" placeholder="Enter Master Password">
+      <button (click)="validateMasterPassword()" class="btn btn-success">Unlock</button>
+    </div>
+  
+    <a routerLink="/home">Back to Vault</a>
+  </div>
+  
